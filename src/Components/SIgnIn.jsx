@@ -104,14 +104,18 @@ const handleChange = (e) => {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+              <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+              onClick={()=>navigate('/')}
+            >
+       Dont have account,Sign up
+            </Button>
+                
               </Grid>
             </Grid>
           </Box>
